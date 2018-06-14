@@ -1,3 +1,7 @@
+ branch=$(git rev-parse --abbrev-ref HEAD)
+        if [ "$branch" = "test" ]
+          then
+git add ./test
 git commit -m "scripted update test"
 git push
-
+fi
