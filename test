@@ -1,3 +1,13 @@
-git commit -m "scripted update test"
+#!/bin/bash
+a=${@:2}
+echo "commit message will be: " $a
+if [ ! -z "$a" ]
+then
+	echo "commit message will be: " $a
+  git commit -m "${a}"
+else 
+	echo "default commit"
+  git commit -m "default"
+fi
 git push
 
