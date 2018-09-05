@@ -1,4 +1,36 @@
-this is just a placeholder
-a happy little placeholder
-how much wood could a wood chuck chuck
-if a wood chuck had it's head
+{
+  "name": "starchup-email-service",
+  "version": "1.2.7",
+  "description": "Microservice for sending and storing emails",
+  "repository": "git@github.com:Starchup/email-service.git",
+  "main": "server/server.js",
+  "dependencies": {
+    "bluebird": "3.5.1",
+    "body-parser": "1.17.2",
+    "compression": "1.7.2",
+    "errorhandler": "1.5.0",
+    "ieee754": "1.1.12",
+    "jshint": "2.9.5",
+    "lodash": "4.17.5",
+    "loopback": "2.39.2",
+    "loopback-boot": "2.27.0",
+    "loopback-connector-gdatastore": "1.0.9",
+    "loopback-connector-mysql": "4.2.0",
+    "loopback-datasource-juggler": "2.57.0",
+    "loopback-google-pubsub": "1.x",
+    "loopback-rediscache-models": "2.0.x",
+    "loopback-status": "1.0.0",
+    "mocha": "3.5.3",
+    "moment": "2.22.2",
+    "moment-timezone": "0.5.17",
+    "nodemailer-sendgrid-transport": "git+https://github.com/Starchup/nodemailer-sendgrid-transport.git",
+    "starchup-vars": "0.3"
+  },
+  "scripts": {
+    "pretest": "jshint server",
+    "test": "mocha server/test/ --recursive"
+  },
+  "devDependencies": {
+    "chai": "4.1.2"
+  }
+}
