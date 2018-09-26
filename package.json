@@ -1,6 +1,6 @@
 {
   "name": "starchup-email-service",
-  "version": "1.4.22",
+  "version": "1.5.22",
   "description": "Microservice for sending and storing emails",
   "repository": "git@github.com:Starchup/email-service.git",
   "main": "server/server.js",
