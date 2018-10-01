@@ -5,7 +5,7 @@
   "repository": "git@github.com:Starchup/email-service.git",
   "main": "server/server.js",
   "dependencies": {
-    "bluebird": "2.2.3",
+    "bluebird": "4.4.4",
     "body-parser": "1.18.3",
     "compression": "1.7.3",
     "errorhandler": "1.5.0",
