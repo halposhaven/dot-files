@@ -1,0 +1,37 @@
+{
+  "name": "starchup-email-service",
+  "version": "1.6.19",
+  "description": "Microservice for sending and storing emails",
+  "repository": "git@github.com:Starchup/email-service.git",
+  "main": "server/server.js",
+  "dependencies": {
+    "bluebird": "1.1.2",
+    "body-parser": "1.18.3",
+    "compression": "1.7.3",
+    "errorhandler": "1.5.0",
+    "ieee754": "1.1.12",
+    "jshint": "2.9.6",
+    "lodash": "4.17.11",
+    "loopback": "3.22.3",
+    "loopback-boot": "2.27.1",
+    "loopback-connector-gdatastore": "1.0.9",
+    "loopback-connector-mysql": "5.3.1",
+    "loopback-datasource-juggler": "3.24.0",
+    "loopback-google-pubsub": "1.x",
+    "loopback-rediscache-models": "2.0.x",
+    "loopback-status": "1.0.0",
+    "mocha": "5.2.0",
+    "moment": "2.22.2",
+    "moment-timezone": "0.5.21",
+    "nodemailer-sendgrid-transport": "git+https://github.com/Starchup/nodemailer-sendgrid-transport.git",
+    "starchup-vars": "0.3",
+    "chai": "4.2.0"
+  },
+  "scripts": {
+    "pretest": "jshint server",
+    "test": "mocha server/test/ --recursive"
+  },
+  "devDependencies": {
+    "chai": "4.1.2"
+  }
+}
